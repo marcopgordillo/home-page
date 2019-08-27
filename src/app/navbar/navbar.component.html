@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#" (click)="onClick(null)">
+    <img src="/assets/images/logo_mg.svg" alt="Logo" title="Home" width="30" height="30" class="d-inline-block align-top" />
+  </a>
+  <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="collapseBasic" [collapse]="isCollapsed" [isAnimated]="true">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item" [ngClass]="{'active' : isActive === 'about'}">
+        <a class="nav-link" href="#about" (click)="onClick('about')">About me
+          <span class="sr-only" *ngIf="isActive ==='about'">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item" [ngClass]="{'active' : isActive === 'skills'}">
+        <a class="nav-link" href="#skills" (click)="onClick('skills')">Skills
+          <span class="sr-only" *ngIf="isActive ==='skills'">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item" [ngClass]="{'active' : isActive === 'expertise'}">
+        <a class="nav-link" href="#expertise" (click)="onClick('expertise')">Expertise
+          <span class="sr-only" *ngIf="isActive ==='expertise'">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item" [ngClass]="{'active' : isActive === 'experience'}">
+        <a class="nav-link" href="#experience" (click)="onClick('experience')">Experience
+          <span class="sr-only" *ngIf="isActive ==='experience'">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item" [ngClass]="{'active' : isActive === 'portfolio'}">
+        <a class="nav-link" href="#portfolio" (click)="onClick('portfolio')">Portfolio
+          <span class="sr-only" *ngIf="isActive ==='portfolio'">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item" [ngClass]="{'active' : isActive === 'education'}">
+        <a class="nav-link" href="#education" (click)="onClick('education')">Education
+          <span class="sr-only" *ngIf="isActive ==='education'">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item" [ngClass]="{'active' : isActive === 'blog'}">
+        <a class="nav-link" href="#blog" (click)="onClick('blog')">Blog
+          <span class="sr-only" *ngIf="isActive ==='blog'">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item" [ngClass]="{'active' : isActive === 'contact'}">
+        <a class="nav-link" href="#contact" (click)="onClick('contact')">Contact
+          <span class="sr-only" *ngIf="isActive ==='contact'">(current)</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
