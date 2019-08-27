@@ -1,40 +1,38 @@
-<section id="welcome">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-3 col-left text-center align-self-center">
-        <img class="img-fluid img-thumbnail" src="/assets/images/photo.png" alt="photo">
-        <app-social-menu></app-social-menu>
+<section id="welcome" class="container-fluid">
+  <div class="row h-100">
+    <div class="col-md-3 text-center align-self-center col-left">
+      <div class="header-photo">
+        <img class="img-fluid" src="/assets/images/photo.png" alt="photo">
       </div>
-      <div class="col-md-9 col-right">
-        <div class="jumbotron bg-white">
-          <h3 class="display-5">Hello, I am</h3>
-          <h1 class="display-4">Marco Gordillo</h1>
-          <h2 class="lead">Electronic and Telecommunications Engineer & Full Stack Software Developer</h2>
-          <hr class="my-4" />
-          <address>
-            <div class="row">
-              <div class="col-lg-3 text-primary">
-                <fa-icon [icon]="['fas', 'map-marker-alt']" aria-hidden="true"></fa-icon>&nbsp;11060 Medlock Bridge Rd
-              </div>
-              <div class="col-lg-3 text-primary">
-                <a target="_blank" href="https://marcopgordillo.github.com">
-                  <fa-icon [icon]="['fas', 'globe']" aria-hidden="true"></fa-icon>&nbsp;marcopgordillo.github.com
-                </a>
-              </div>
-              <div class="col-lg-3 text-primary">
-                <a href="mailto:marcopgordillo@gmail.com">
-                  <fa-icon [icon]="['far', 'envelope']" aria-hidden="true"></fa-icon>&nbsp;marcopgordillo@gmail.com
-                </a>
-              </div>
-              <div class="col-lg-3 text-primary">
-                <a href="tel:+14045284650">
-                  <fa-icon [icon]="['fas', 'phone']" aria-hidden="true"></fa-icon>&nbsp;+1 404 528 4650
-                </a>
-              </div>
-            </div>
-          </address>
+      <app-social-menu></app-social-menu>
+    </div>
+    <div class="col-md-9 align-self-center col-right px-5">
+      <h3 class="display-5">Hello, I am</h3>
+      <h1 class="display-4">Marco Gordillo</h1>
+      <h2 class="lead">Electronic and Telecommunications Engineer & Full Stack Software Developer</h2>
+      <address>
+        <hr class="my-4" />
+        <div class="row py-4">
+          <div class="col-lg-3 col-md-6 text-primary">
+            <fa-icon [icon]="['fas', 'map-marker-alt']" aria-hidden="true"></fa-icon>&nbsp;Atlanta, GA
+          </div>
+          <div class="col-lg-3 col-md-6 text-primary">
+            <a target="_blank" href="https://marcopgordillo.github.com">
+              <fa-icon [icon]="['fas', 'globe']" aria-hidden="true"></fa-icon>&nbsp;marcopgordillo.github.com
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 text-primary">
+            <a href="mailto:marcopgordillo@gmail.com">
+              <fa-icon [icon]="['far', 'envelope']" aria-hidden="true"></fa-icon>&nbsp;marcopgordillo@gmail.com
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 text-primary">
+            <a href="tel:+14045284650">
+              <fa-icon [icon]="['fas', 'phone']" aria-hidden="true"></fa-icon>&nbsp;+1 404 528 4650
+            </a>
+          </div>
         </div>
-      </div>
+      </address>
     </div>
   </div>
 </section>

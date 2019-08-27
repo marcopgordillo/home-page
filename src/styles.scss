@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+@media only screen and (min-width: 768px) {
+  .col-left, .col-right {
+    position: relative;
+    justify-content: center;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-left {
+    padding-top: 50px;
+  }
+}
